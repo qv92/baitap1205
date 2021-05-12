@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="so1" type="number"/>
+    <input id="so2" type="number"/>
+    <button onclick=phepcong()>+</button>
+    <button onclick=pheptru()>-</button>
+    <button onclick=phepnhan()>*</button>
+    <button onclick=phepchia()>/</button>
+
+<p id="ketqua">Ket qua</p>
+<script>
+    function phepcong() {
+    let a = +document.getElementById("so1").value;
+    let b = +document.getElementById("so2").value;
+    document.getElementById("ketqua").innerHTML +=a+b;
+    }
+    function pheptru() {
+        let a = document.getElementById("so1").value;
+        let b = document.getElementById("so2").value;
+        document.getElementById("ketqua").innerHTML +=a-b;
+    }
+    function phepnhan() {
+        let a = document.getElementById("so1").value;
+        let b = document.getElementById("so2").value;
+        document.getElementById("ketqua").innerHTML +=a*b;
+    }
+    function phepchia() {
+        let a = document.getElementById("so1").value;
+        let b = document.getElementById("so2").value;
+        document.getElementById("ketqua").innerHTML +=a/b;
+    }
+</script>
+</body>
+</html>

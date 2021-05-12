@@ -1,0 +1,31 @@
+<html>
+<body>
+<form><table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input id="amount"  ></td>
+        <td id="currency1"><select  style="width: 100px" name="quocgia">
+            <option  value="VND">VND</option>
+        </select></td>
+        <td id="currency2"><select style="width: 100px" name="quocgia">
+            <option value="USD">USD</option>
+        </select></td>
+        <td><button type="button" onclick="myFunction()">COnvert</button></td>
+    </tr>
+</table>
+</form>
+<p id="ketqua">Ket qua:</p>
+<script>
+    function myFunction() {
+        let a = document.getElementById("amount").value;
+        document.getElementById("ketqua").innerHTML += a/23000;
+    }
+</script>
+
+</body>
+</html>
